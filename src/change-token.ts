@@ -73,6 +73,8 @@ export async function updateToken(args: Args): Promise<void> {
     rotationDays = 90,
     input = process.stdin,
     output = process.stdout,
+    workDir = process.cwd(),
+    stack: stackName,
   } = args;
 
   const readline = createInterface({
@@ -81,8 +83,8 @@ export async function updateToken(args: Args): Promise<void> {
   });
 
   const stack = await automation.LocalWorkspace.selectStack({
-    stackName: 'prod',
-    workDir: './',
+    stackName,
+    workDir,
   });
 
   if (type === 'npm' && args.username) {

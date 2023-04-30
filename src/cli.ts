@@ -15,7 +15,7 @@ class BaseCommand extends Command {
   });
 
   workDir = Option.String('--work-dir', {
-    required: true,
+    required: false,
     description: 'Pulumi working directory (defaults to ./)',
   });
 
