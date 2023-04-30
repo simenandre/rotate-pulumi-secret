@@ -30,8 +30,11 @@ export function getToken(opts: GetTokenOptions): Output<string> {
 
   const config = new Config(configName);
 
+  const resolvedConfigTokenName =
+    configTokenName ?? type === 'npm' ? 'npm-token' : 'github-token';
+
   const expirtyDateRaw = config.requireSecret(
-    configTokenName ?? type === 'npm' ? 'npm-token' : 'github-token',
+    `${resolvedConfigTokenName}-expires-at`,
   );
 
   return expirtyDateRaw.apply(expiry => {
@@ -44,6 +47,6 @@ export function getToken(opts: GetTokenOptions): Output<string> {
       );
     }
 
-    return expiry;
+    return config.requireSecret(resolvedConfigTokenName);
   });
 }
