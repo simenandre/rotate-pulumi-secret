@@ -119,9 +119,13 @@ export async function updateToken(args: Args): Promise<void> {
       'utf-8',
     );
 
-    const tokenId = await stack.getConfig(`${configName}-id`);
+    const tokenId = await stack.getConfig(`${configName}-id`).catch(() => {
+      output.write(
+        `No token ID found. You should probably add it with: pulumi config set ${configName}-id <token-id>`,
+      );
+    });
 
-    if (tokenId.value) {
+    if (tokenId) {
       openGitHubTokenPage(type, tokenId.value);
     } else if (args.tokenId) {
       openGitHubTokenPage(type, args.tokenId);
