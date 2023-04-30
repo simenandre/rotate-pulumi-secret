@@ -6,6 +6,17 @@ import { execa } from 'execa';
 
 export interface TokenArgs {
   /**
+   * The Pulumi stack to use
+   */
+  stack: string;
+
+  /**
+   * The Pulumi project to use
+   * @default process.cwd()
+   */
+  workDir?: string;
+
+  /**
    * Name of the config to use
    * @default npm or github
    */

@@ -9,6 +9,16 @@ class BaseCommand extends Command {
     required: false,
   });
 
+  stack = Option.String('--stack', {
+    required: true,
+    description: 'Pulumi stack name.',
+  });
+
+  workDir = Option.String('--work-dir', {
+    required: true,
+    description: 'Pulumi working directory (defaults to ./)',
+  });
+
   async execute() {
     this.context.stdout.write('Hello!\n');
   }
@@ -54,6 +64,8 @@ class ChangeNPMToken extends BaseCommand {
       username: this.username,
       input: this.context.stdin,
       output: this.context.stdout,
+      workDir: this.workDir ?? process.cwd(),
+      stack: this.stack,
     });
   }
 }
@@ -110,6 +122,8 @@ class ChangeGitHubToken extends BaseCommand {
       tokenId: this.tokenId,
       input: this.context.stdin,
       output: this.context.stdout,
+      workDir: this.workDir ?? process.cwd(),
+      stack: this.stack,
     });
   }
 }
