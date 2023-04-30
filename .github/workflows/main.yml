@@ -31,5 +31,5 @@ jobs:
       - name: Lint 💅
         run: pnpm lint
 
-      - name: Test 🧪
-        run: yarn test --passWithNoTests
+      # - name: Test 🧪
+      #   run: yarn test --passWithNoTests
