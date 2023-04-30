@@ -27,7 +27,7 @@ jobs:
         run: pnpm build
 
       - name: Set version to release tag 📝
-        run: pnpm version from-git --no-commit-hooks --no-git-tag-version
+        run: pnpm version from-git --no-commit-hooks --no-git-tag-version --allow-same-version
 
       - name: Publish 🚀
         run: pnpm publish --access public --no-git-checks
