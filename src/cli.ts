@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 import { Builtins, Cli, Command, Option } from 'clipanion';
 import * as t from 'typanion';
-import { updateToken } from './update-token.js';
+import { updateToken } from './main.js';
 
 class BaseCommand extends Command {
   rotationDays = Option.String('--rotation-days', {
