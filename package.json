@@ -31,7 +31,7 @@
     "start": "node dist/cli.js"
   },
   "devDependencies": {
-    "@bjerk/eslint-config": "^4.0.0",
+    "@bjerk/eslint-config": "^5.0.0",
     "@cobraz/prettier": "^2.0.1",
     "@tsconfig/esm": "^1.0.3",
     "@tsconfig/node-lts": "^18.12.1",
