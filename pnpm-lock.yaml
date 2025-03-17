@@ -12,8 +12,8 @@ dependencies:
     specifier: ^3.2.0
     version: 3.2.1(typanion@3.14.0)
   date-fns:
-    specifier: ^2.30.0
-    version: 2.30.0
+    specifier: ^4.0.0
+    version: 4.1.0
   dedent:
     specifier: ^0.7.0
     version: 0.7.0
@@ -68,13 +68,6 @@ packages:
     resolution: {integrity: sha512-Ed61U6XJc3CVRfkERJWDz4dJwKe7iLmmJsbOGu9wSloNSFttHV0I8g6UAgb7qnK5ly5bGLPd4oXZlxCdANBOWQ==}
     engines: {node: '>=6.9.0'}
     dev: true
-
-  /@babel/runtime@7.26.10:
-    resolution: {integrity: sha512-2WJMeRQPHKSPemqk/awGrAiuFfzBmOIPXKizAsVhWH9YJqLZ0H+HS4c8loHGgW6utJ3E/ejXQUsiGaQy2NZ9Fw==}
-    engines: {node: '>=6.9.0'}
-    dependencies:
-      regenerator-runtime: 0.14.1
-    dev: false
 
   /@bjerk/eslint-config@4.2.0(@typescript-eslint/eslint-plugin@5.62.0)(@typescript-eslint/parser@5.62.0)(eslint-config-prettier@8.10.0)(eslint-plugin-eslint-comments@3.2.0)(eslint-plugin-import@2.31.0)(eslint-plugin-prettier@4.2.1)(eslint-plugin-promise@6.6.0)(eslint-plugin-unicorn@47.0.0)(eslint@8.57.1)(prettier@3.5.3):
     resolution: {integrity: sha512-+VmXDjWBxIyt42K44l2ZTE0gbIXsOz/PuU/ITRZpsF7oZByXCQRZfgc0k4gvnXKxu0RqMBBJQx87nyvAwxM1WA==}
@@ -1333,11 +1326,8 @@ packages:
       is-data-view: 1.0.2
     dev: true
 
-  /date-fns@2.30.0:
-    resolution: {integrity: sha512-fnULvOpxnC5/Vg3NCiWelDsLiUc9bRwAPs/+LfTLNvetFCtCTN+yQz15C/fs4AwX1R9K5GLtLfn8QW+dWisaAw==}
-    engines: {node: '>=0.11'}
-    dependencies:
-      '@babel/runtime': 7.26.10
+  /date-fns@4.1.0:
+    resolution: {integrity: sha512-Ukq0owbQXxa/U3EGtsdVBkR1w7KOQ5gIBqdH2hkvknzZPYvBxb/aa6E8L7tmjFtkwZBu3UXBbjIgPo/Ez4xaNg==}
     dev: false
 
   /debug@3.2.7:
@@ -3454,10 +3444,6 @@ packages:
       get-proto: 1.0.1
       which-builtin-type: 1.2.1
     dev: true
-
-  /regenerator-runtime@0.14.1:
-    resolution: {integrity: sha512-dYnhHh0nJoMfnkZs6GmmhFknAGRrLznOu5nc9ML+EJxGvrx6H7teuevqVqCuPcPK//3eDrrjQhehXVx9cnkGdw==}
-    dev: false
 
   /regexp-tree@0.1.27:
     resolution: {integrity: sha512-iETxpjK6YoRWJG5o6hXLwvjYAoW+FEZn9os0PD/b6AP6xQwsa/Y7lCVgIixBbUPMfhu+i2LtdeAqVTgGlQarfA==}
