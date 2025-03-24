@@ -37,7 +37,7 @@
     "@tsconfig/node-lts": "^18.12.1",
     "@tsconfig/strictest": "^2.0.1",
     "@types/dedent": "^0.7.0",
-    "@types/node": "^18",
+    "@types/node": "^22.0.0",
     "typescript": "^5.0.4"
   },
   "dependencies": {
