@@ -44,7 +44,7 @@
     "@pulumi/pulumi": "^3.65.1",
     "clipanion": "^3.2.0",
     "date-fns": "^2.30.0",
-    "dedent": "^0.7.0",
+    "dedent": "^1.0.0",
     "execa": "^7.1.1",
     "readline": "^1.3.0",
     "typanion": "^3.12.1"
