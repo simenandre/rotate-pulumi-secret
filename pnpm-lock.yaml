@@ -38,8 +38,8 @@ devDependencies:
     specifier: ^1.0.3
     version: 1.0.5
   '@tsconfig/node-lts':
-    specifier: ^18.12.1
-    version: 18.12.5
+    specifier: ^22.0.0
+    version: 22.0.4
   '@tsconfig/strictest':
     specifier: ^2.0.1
     version: 2.0.5
@@ -727,8 +727,8 @@ packages:
     deprecated: this package has been deprecated
     dev: true
 
-  /@tsconfig/node-lts@18.12.5:
-    resolution: {integrity: sha512-KJZX0kQ5FBv77WDVzmQ9y1dUjaJCNXAAz3LSsg5cMwH0AUijVdDQtII+IVprEXdb13U9GjVOBxBzyRvr/ozPxw==}
+  /@tsconfig/node-lts@22.0.4:
+    resolution: {integrity: sha512-5eAeCX6l/EYe6H2UAw5nBgjfAgdlsR+lSp8YNNGwz+ixoi7JfJ5bOQvsiEhxGm5bOZFVF+cJSIj4tanpCCRMIw==}
     dev: true
 
   /@tsconfig/strictest@2.0.5:
